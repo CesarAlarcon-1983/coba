@@ -3,11 +3,11 @@
     padding: 40px 0;
 
     &__logo {
-        margin: 0;
-        color: $turquoise;
-        font-size: 45px;
-        margin-bottom: 20px;
-        text-transform: uppercase;
+        margin: -20px 0 0;
+
+        img {
+            height: 100px;
+        }
     }
 
     &__text {
@@ -58,12 +58,25 @@
                 top: 50%;
                 transform: translateY(-50%) rotate(-45deg);
             }
+
+            &:hover {
+                color: lighten($lightBlack, 20%);
+            }
         }
     }
 
     &__contact-text  {
         color: $lightBlack;
         font-weight: 500;
+
+        a {
+            color: $lightBlack;
+            text-decoration: none;
+
+            &:hover {
+                color: $mainColor;
+            }
+        }
     }
 
     &__social {

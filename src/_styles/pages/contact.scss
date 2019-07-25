@@ -81,6 +81,7 @@
             width: 100%;
             text-align: center;
             width: 100%;
+            cursor: pointer;
 
             @include mq(md) {
                 width: 150px;

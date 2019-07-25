@@ -284,6 +284,10 @@
             color: $white;
             font-size: 32px;
             text-transform: uppercase;
+
+            @include mq(md) {
+                color: $lightBlack;
+            }
         }
     }
 }
