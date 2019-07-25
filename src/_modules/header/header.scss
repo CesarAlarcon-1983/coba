@@ -28,12 +28,7 @@
     &__logo {
         @include trans;
         z-index: 2000;
-        font-family: $altFont;
-        font-size: 42px;
-        font-weight: 700;
         text-decoration: none;
-        color: #484848;
-        text-transform: uppercase;
         
         @include mq(md) {
             position: absolute;
@@ -41,6 +36,11 @@
             left: 50%;
             transform: translate3d(-50%, -50%, 0);
 
+        }
+
+        img {
+            height: 80px;
+            width: auto;
         }
     }
 
@@ -58,6 +58,10 @@
             text-decoration: none;
             font-size: 18px;
             font-weight: 500;
+
+            &:hover {
+                color: lighten($turquoise, 10%);
+            }
         }
     }
 

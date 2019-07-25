@@ -281,9 +281,13 @@
 
             margin: 0;
             font-weight: 700;
-            color: $lightBlack;
+            color: $white;
             font-size: 32px;
             text-transform: uppercase;
+
+            @include mq(md) {
+                color: $lightBlack;
+            }
         }
     }
 }
