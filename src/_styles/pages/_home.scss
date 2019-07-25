@@ -233,12 +233,12 @@
             &:hover {
                 .home__houses__image {
                     img {
-                        transform: translate3d(-50%, -50%, 0) scale3d(1.02, 1.02, 1.02);
+                        transform: translate3d(-50%, -50%, 0) scale3d(1.05, 1.05, 1.05);
+                        opacity: .6;
                     }
                 }
 
                 .home__houses__content-title {
-                    color: $white;
                 }
             }
         }
@@ -251,7 +251,7 @@
             background: $black;
 
             img  {
-                @include trans;
+                @include trans($d: .5s);
 
                 position: absolute;
                 top: 50%;
@@ -281,7 +281,7 @@
 
             margin: 0;
             font-weight: 700;
-            color: $lightBlack;
+            color: $white;
             font-size: 32px;
             text-transform: uppercase;
         }
