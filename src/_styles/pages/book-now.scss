@@ -1,0 +1,92 @@
+.book-now {
+    padding: 180px 0 100px;
+
+    @include mq(md) {
+        padding: 100px 0;
+    }
+
+    &__title {
+        color: $lightBlack;
+        font-weight: 700;
+        font-size: 42px;
+        letter-spacing: -0.02em;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        color: $lightBlack;
+        font-size: 18px;
+        font-weight: 300;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    &__container {
+        width: 100%;
+        background: $lightestGray;
+        margin: 40px 0;
+
+        @include mq(md) {
+            margin: 0;
+        }
+    }
+
+    &__wrapper {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        width: calc(100% - 55px);
+        margin-left: auto;
+        margin-right: auto;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid $lightGray;
+        }
+    }
+
+    &__icon {
+        margin-right: 20px;
+    }
+
+    &__wrapper-text {
+        color: $lightBlack;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    &__form {
+        &__title {
+            color: $lightBlack;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        &__input {
+            width: 100%;
+            height: 50px;
+            margin-bottom: 30px;
+            border: 1px solid $lightGray;
+            padding: 0 20px;
+            font-size: 17px;
+
+            &--textarea {
+                height: 150px;
+                padding-top: 20px;
+            }
+        }
+
+        &__button {
+            display: block;
+            background: $red;
+            border-radius: 3px;
+            height: 50px;
+            line-height: 50px;
+            color: $white;
+            font-weight: 700;
+            border: none;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

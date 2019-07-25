@@ -5,17 +5,22 @@ var Header = function() {
     var header = $('.header');
     var body = $('body');
     var menuOpen = $('.header__hamburguer');
-    var menuClose = $('.header__nav__close');
 
     menuOpen.on('click', function(){
-        header.addClass('-open');
-        body.addClass('-hideOverflow');
+        header.toggleClass('-open');
+        body.toggleClass('-hideOverflow');
     });
 
-    menuClose.on('click', function(){
-        header.removeClass('-open');
-        body.removeClass('-hideOverflow');
-    });
+    //faq's functionality
+
+    var questionsContainer = $('.faq__container');
+
+    questionsContainer.on('click', function(e) {
+        e.preventDefault();
+
+        var answer = $(this).find($('.faq__answer'));
+        answer.toggleClass('-open');
+    })
 };
 
 module.exports = Header;

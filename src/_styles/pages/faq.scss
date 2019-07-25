@@ -1,0 +1,104 @@
+.faq {
+    padding: 180px 0 100px;
+
+    @include mq(md) {
+        padding: 100px 0;
+    }
+
+    &__title {
+        color: $lightBlack;
+        font-size: 30px;
+        margin: 0;
+        margin-bottom: 40px;
+
+        @include mq(md) {
+            font-size: 42px;
+        }
+    }
+
+    &__container {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid $lightestGray;
+        text-decoration: none;
+        outline: none;
+        
+    }
+    
+    &__question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 70px;
+        
+        &__title {
+            font-weight: 700;
+            font-size: 20px;
+            color: $lightBlack;
+            margin: 0;
+            width: 85%;
+            padding: 20px 0;
+        }
+
+        &__button {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: $turquoise;
+            border: none;
+            position: relative;
+            
+            span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate3d(-50%, -50%, 0);
+                background: $white;
+                
+                &.-vertical {
+                    height: 15px;
+                    width: 2px;
+                }
+    
+                &.-horizontal {
+                    width: 15px;
+                    height: 2px;
+                }
+            }
+        }
+    }
+
+    &__answer {
+        @include trans;
+
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+
+        &.-open {
+            height: auto;
+            opacity: 1;
+            padding-bottom: 20px;
+
+        }
+
+        &__title {
+            font-weight: 300;
+            font-size: 18px;
+            color: $lightBlack;            
+        }
+
+        &__list {
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+        
+        &__item {
+            font-size: 14px;
+            color: $lightBlack;            
+            font-weight: 500;
+            margin-top: 10px; 
+            
+        }
+    }
+}

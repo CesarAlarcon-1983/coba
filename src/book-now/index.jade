@@ -1,0 +1,57 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../';
+
+block content
+    main.book-now
+        .container
+            .row
+                .col-24.col-md-20.offset-md-2
+                    .row
+                        .col-24.col-md-16
+                            h2.book-now__title Book now
+                            p.book-now__text To reserve the room, You will need to send us a copy of your Passport.
+                            p.book-now__text Also, you will need to fill in a form with all your personal and stay information and accepting our terms and conditions. And you must pay 250 USD for PAYPAL.
+                            p.book-now__text With the payment of your reservation you will have your room insured.
+                            p.book-now__text At the time of check in you will have to pay the other half of the deposit. To be able to complete the deposit total. before you make the reservation You have to ask if we have rooms available. If you need more information you can see the FAQS or send a email to staff.
+                            p.book-now__text In paypal for you are going to see the way to make the reservation.
+                            p.book-now__text The deposit will be returned to you in the same way it was paid, once your stay is finished if there is nothing broken in the apartment or in the room and if you have followed the norms of coexistence.
+                            p.book-now__text Transfer costs will be borne by the customer
+                        .col-24.col-md-8
+                            .book-now__container
+                                .book-now__wrapper
+                                    .book-now__icon
+                                        img(src="/images/book-now/paypal-icon.png")
+                                    p.book-now__wrapper-text PayPal Payment
+
+                                .book-now__wrapper
+                                    .book-now__icon
+                                        img(src="/images/book-now/document-icon.png")
+                                    p.book-now__wrapper-text COBA politics
+
+                                .book-now__wrapper
+                                    .book-now__icon
+                                        img(src="/images/book-now/document-icon.png")
+                                    p.book-now__wrapper-text Cancellation policy
+                        .col-24.col-md-14
+                            form.book-now__form
+                                h3.book-now__form__title Reservation form
+                                .row
+                                    .col-24.col-md-12
+                                        input.book-now__form__input(type="" placeholder="Nombre y Apellidos")
+                                    .col-24.col-md-12
+                                        input.book-now__form__input(type="" placeholder="Teléfono")
+                                    .col-24
+                                        input.book-now__form__input(type="" placeholder="Email")
+                                    .col-24
+                                        input.book-now__form__input(type="" placeholder="Fecha de Nacimiento")
+                                    .col-24.col-md-12
+                                        input.book-now__form__input(type="" placeholder="Check In")
+                                    .col-24.col-md-12
+                                        input.book-now__form__input(type="" placeholder="Check Out")
+                                    .col-24
+                                        textarea.book-now__form__input.book-now__form__input--textarea(type="textarea" placeholder="Mensaje")
+                                    .col-24.col-md-12
+                                        button.book-now__form__button(type="submit") Pay your reservation

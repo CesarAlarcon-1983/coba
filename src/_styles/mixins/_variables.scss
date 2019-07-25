@@ -5,9 +5,14 @@ $darkestGray: #333;
 $darkGray: #787871;
 $midGray: #999;
 $lightGray: #ebebeb;
-$lightestGray: #f4f7f8;
+$lightestGray: #f4f4f4;
 $blue: #053f7a;
 $blueGray: #bbc9c9;
+
+$red: #F91942;
+$turquoise: #008489;
+$altGray: #e6e6e6;
+$lightBlack: #484848;
 
 $mainColor: $blue;
 $link: $mainColor;
@@ -35,4 +40,5 @@ $duration: 0.3s;
 $easing: cubic-bezier(.785, .135, .15, .86);
 $easingLight: ease;
 
-$mainFont: 'Open Sans', sans-serif;
+$mainFont: 'Montserrat', sans-serif;
+$altFont: 'Fira Sans', sans-serif;

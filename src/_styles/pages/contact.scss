@@ -1,0 +1,90 @@
+.contact {
+    padding: 180px 0 100px;
+
+    @include mq(md) {
+        padding: 100px 0;
+    }
+    
+    &__title {
+        color: $lightBlack;
+        font-weight: 700;
+        font-size: 24px;
+    }
+    
+    &__text {
+        font-weight: 300;
+        font-size: 17px;        
+        color: $midGray;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    &__group {
+        display: flex;
+        padding: 0 20px;
+        margin-bottom: 40px;
+    }
+
+    &__icon {
+        margin-right: 20px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__wrapper-title {
+        margin: 0;
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 5px; 
+    }
+
+    &__wrapper-text {
+        font-weight: 300;
+        font-size: 17px;
+        margin: 0;
+    }
+
+    &__form {
+        &__title {
+            color: $lightBlack;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        &__input {
+            width: 100%;
+            height: 50px;
+            margin-bottom: 30px;
+            border: 1px solid $lightGray;
+            padding: 0 20px;
+            font-size: 17px;
+
+            &--textarea {
+                height: 150px;
+                padding-top: 20px;
+            }
+        }
+
+        &__button {
+            display: block;
+            background: $red;
+            border-radius: 3px;
+            height: 50px;
+            line-height: 50px;
+            color: $white;
+            font-weight: 700;
+            border: none;
+            width: 100%;
+            text-align: center;
+            width: 100%;
+
+            @include mq(md) {
+                width: 150px;
+            }
+        }
+    }    
+}
