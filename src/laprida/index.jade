@@ -1,0 +1,187 @@
+extends ../_layouts/base
+
+include ../_modules/slider/slider
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../';
+
+block content
+    main.house.house--laprida
+        section.house__hero
+            .house__hero__container-top
+                .house__hero__image
+                    img(src="/images/house/hero-1.jpg")
+                .house__hero__image-mobile
+                    img(src="/images/house/hero.jpg")
+                .container
+                    .row
+                        .col-24.col-md-14.offset-md-5.house__hero__col
+                            .house__hero__container
+                                p.house__hero__text house
+                                h2.house__hero__title Laprida
+            .house__hero__container-bottom
+                .container
+                    .row
+                        .col-24.col-md-22.offset-md-1
+                            .row
+                                .col-24.col-md-16
+                                    .house__hero__wrapper
+                                        p.house__hero__location-text.house__hero__location-text--dark House Laprida - Laprida, 2000
+                                        p.house__hero__location-text Recoleta
+                                .col-24.col-md-8
+                                    .house__hero__wrapper
+                                        a.house__hero__button(href="/book-now") Book now
+        section.house__description
+            .container
+                .row
+                    .col-24.col-md-22.offset-md-1
+                        .row
+                            .col-24.col-md-16
+                                h2.house__description__title The house
+                                p.house__description__text Its located in Recoleta, one of the most well known neighborhood in Buenos Aires. Beautiful area; You can buy anything you need nearby, until late in the night feeling totally secure! All way of transports just 1 block away: Subway line H and more than 10 bus stops.
+                                p.house__description__text It is a really nice Studio decorated with local furniture. You can feel the Argentinian air in its details. It allows 2 people maximun: a couple or two friends.
+                                p.house__description__text It has one big and spacious area dived by a screen to separete the living room from the doublé bed. Next to it, there is a smaller room with a simple bed and closet.
+                                p.house__description__text Then you have the bathroom and a fully equipped Kitchen with everything you need for you stay. 
+                                p.house__description__text This aparment is perfect for those who are looking for a prívate, more intímate and quite place to stay in the heart of Buenos Aires.
+                            .col-24.col-md-8
+                                .house__description__container
+                                    .house__description__wrapper
+                                        .house__description__icon
+                                            img(src="/images/house/location-icon.png")
+                                        p.house__description__wrapper-text
+                                            span Location
+                                            |Recoleta
+
+                                    .house__description__wrapper
+                                        .house__description__icon
+                                            img(src="/images/house/bed-icon.png")
+                                        p.house__description__wrapper-text
+                                            span Rooms
+                                            |1
+                                    .house__description__wrapper
+                                        .house__description__icon
+                                            img(src="/images/house/shower-icon.png")
+                                        p.house__description__wrapper-text
+                                            span Shared Bathrooms
+                                            |1
+                            .col-24.col-md-16
+                                .house__description__features
+                                    h3.house__description__features-title House features
+                                    ul.house__description__features-list
+                                        li.house__description__features-item
+                                            img(src="/images/house/couch-icon.png")
+                                            p Furnished
+                                        li.house__description__features-item
+                                            img(src="/images/house/elevator-icon.png")
+                                            p Elevator
+                                        li.house__description__features-item
+                                            img(src="/images/house/dish-icon.png")
+                                            p Dishes and Cullery
+                                        li.house__description__features-item
+                                            img(src="/images/house/oven-icon.png")
+                                            p Oven
+                                        li.house__description__features-item
+                                            img(src="/images/house/microwave-icon.png")
+                                            p Microwave
+                                        li.house__description__features-item
+                                            img(src="/images/house/balcony-icon.png")
+                                            p Balcony
+                                        li.house__description__features-item
+                                            img(src="/images/house/heating-icon.png")
+                                            p Central Heating System
+                                        li.house__description__features-item
+                                            img(src="/images/house/kitchen-icon.png")
+                                            p Equiped Kitchen
+                                        li.house__description__features-item
+                                            img(src="/images/house/shower-icon.png")
+                                            p 2 shared bathrooms
+                                        li.house__description__features-item
+                                            img(src="/images/house/toaster-icon.png")
+                                            p Toaster
+                                        li.house__description__features-item
+                                            img(src="/images/house/fridge-icon.png")
+                                            p 2 Comb Fridge + Frezzer
+                                        li.house__description__features-item
+                                            img(src="/images/house/key-icon.png")
+                                            p Lock in the Room
+
+                            .col-24.col-md-16
+                                .row
+                                    .col-24.col-md-12
+                                        .house__description__room-features
+                                            h3.house__description__features-title Included services
+                                            ul.house__description__room-features-list
+                                                li.house__description__room-features-item
+                                                    img(src="/images/house/wifi-icon.png")
+                                                    p Wifi
+                                                li.house__description__room-features-item
+                                                    img(src="/images/house/ray-icon.png")
+                                                    p Gas, water, electricity
+                                                li.house__description__room-features-item
+                                                    img(src="/images/house/bottle-icon.png")
+                                                    p Weekly cleaning of common areas
+                                                li.house__description__room-features-item
+                                                    img(src="/images/house/tools-icon.png")
+                                                    p Repair & Maintenace service
+                                                li.house__description__room-features-item
+                                                    img(src="/images/house/mail-icon.png")
+                                                    p Mailing service
+
+        section.house__availability
+            .container
+                .row
+                    .col-24.col-md-22.offset-md-1
+                        h2.house__availability__title Bedrooms
+                        .house__availability__container
+                            span.house__availability__room.house__availability__room--available 1
+                            span.house__availability__room.house__availability__room--available 2
+                            span.house__availability__room.house__availability__room--booked 3
+                            span.house__availability__room.house__availability__room--booked 4
+                        .house__availability__legend
+                            .house__availability__room-status
+                                span.-turquoise
+                                p.house__availability__legend-text available
+                            .house__availability__room-status
+                                span.-red
+                                p.house__availability__legend-text booked
+
+
+        section.house__galery
+            .container
+                .row
+                    .col-24.col-md-22.offset-md-1
+                        h2.house__galery__title Gallery
+                        +slider('house__galery__slider', 'multi')
+                            .house__galery__slide
+                                a.house__galery__slide-image(href="/images/house/gallery-1.png")
+                                    img(src="/images/house/gallery-1.png")
+                            .house__galery__slide
+                                a.house__galery__slide-image(href="/images/house/gallery-2.png")
+                                    img(src="/images/house/gallery-2.png")
+                            .house__galery__slide
+                                a.house__galery__slide-image(href="/images/house/gallery-3.png")
+                                    img(src="/images/house/gallery-3.png")
+                            .house__galery__slide
+                                a.house__galery__slide-image(href="/images/house/gallery-4.png")
+                                    img(src="/images/house/gallery-4.png")
+                            .house__galery__slide
+                                a.house__galery__slide-image(href="/images/house/gallery-1.png")
+                                    img(src="/images/house/gallery-1.png")
+                            .house__galery__slide
+                                a.house__galery__slide-image(href="/images/house/gallery-2.png")
+                                    img(src="/images/house/gallery-2.png")
+                            .house__galery__slide
+                                a.house__galery__slide-image(href="/images/house/gallery-3.png")
+                                    img(src="/images/house/gallery-3.png")
+                            .house__galery__slide
+                                a.house__galery__slide-image(href="/images/house/gallery-4.png")
+                                    img(src="/images/house/gallery-4.png")
+
+        section.house__map
+            .container
+                .row
+                    .col-24.col-md-22.offset-md-1
+                        h2.house__map__title Location
+                        .house__map__container
+                            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3409947760006!2d-58.44584738477059!3d-34.59553788046152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca0a79cbb15b%3A0xf648054b323e310b!2sThames+500%2C+Buenos+Aires!5e0!3m2!1ses-419!2sar!4v1564014200319!5m2!1ses-419!2sar" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen)

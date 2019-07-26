@@ -1,0 +1,233 @@
+extends ../_layouts/base
+
+include ../_modules/slider/slider
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../';
+
+block content
+    main.house.house--pellegrini
+        section.house__hero
+            .house__hero__container-top
+                .house__hero__image
+                    img(src="/images/house/hero-1.jpg")
+                .house__hero__image-mobile
+                    img(src="/images/house/hero.jpg")
+                .container
+                    .row
+                        .col-24.col-md-14.offset-md-5.house__hero__col
+                            .house__hero__container
+                                p.house__hero__text house
+                                h2.house__hero__title Pellegrini
+            .house__hero__container-bottom
+                .container
+                    .row
+                        .col-24.col-md-22.offset-md-1
+                            .row
+                                .col-24.col-md-16
+                                    .house__hero__wrapper
+                                        p.house__hero__location-text.house__hero__location-text--dark House Pellegrini - Pellegrini, 600
+                                        p.house__hero__location-text Recoleta
+                                .col-24.col-md-8
+                                    .house__hero__wrapper
+                                        a.house__hero__button(href="/book-now") Book now
+        section.house__description
+            .container
+                .row
+                    .col-24.col-md-22.offset-md-1
+                        .row
+                            .col-24.col-md-16
+                                h2.house__description__title The house
+                                p.house__description__text This incredible and amazing COBA apartment is located in Street Carlos Pellegrni, one of the most important and central streets in Buenos Aires. The location is perfect, it is really central, just 5 minute walking distance to Plaza de Tribunales and just 15 minute walking distance to Buenos Aires University and 20 minute walking distance to UADE and UCA University on the other side. Furthermore, in 200 metres from the main door of the building, there is the Teatro Colon metro station (D).
+                                p.house__description__text This more than 150m2 apartment is in an elegant and majestic modernist building with an elevator and with an incredible main hall and doorwoman.
+                                p.house__description__text It has 4 cozy rooms and so there will be a maximum of 4 students home at a time. It has a welcoming hall that is really spacious thanks to the high ceilings of the apartment. There is also a bright , a perfect place to relax and a wonderful dining room with a wall full of windows and a big table with chairs to share your time and co-living experience with your flatmates. There is also a beautiful kitchen in the apartment, just renewed and well decorated and completely equipped.
+                                p.house__description__text The apartment has two bathrooms. There is heater system in the complete apartment and in all rooms.
+                                p.house__description__text You will find this apartment in the Recoleta neighborhood, located on the left side of the Teatro Colon, really centric. In this neighborhood you will find all different services around: bars, shops, restaurants, theaters, gyms, and more. Also, some of the best architectural modern buildings are located around this area.
+                                p.house__description__text Also, there are some campuses from different universities around, so there is always a lot of young people in the streets.
+                                p.house__description__text This apartment is the perfect option for students and young professionals who want to live in the city center of Buenos Aires and next to all services. Sharing your co-living experience with people from all around the world, and will make an unforgettable and useful life experience. In this apartment, you will always have a mate to do something together and for sure, you will always have the opportunity to relax in your incredible and private room.
+                            .col-24.col-md-8
+                                .house__description__container
+                                    .house__description__wrapper
+                                        .house__description__icon
+                                            img(src="/images/house/location-icon.png")
+                                        p.house__description__wrapper-text
+                                            span Location
+                                            |Recoleta
+
+                                    .house__description__wrapper
+                                        .house__description__icon
+                                            img(src="/images/house/bed-icon.png")
+                                        p.house__description__wrapper-text
+                                            span Rooms
+                                            |4
+
+                                    .house__description__wrapper
+                                        .house__description__icon
+                                            img(src="/images/house/shower-icon.png")
+                                        p.house__description__wrapper-text
+                                            span Shared Bathrooms
+                                            |2
+                            .col-24.col-md-16
+                                .house__description__features
+                                    h3.house__description__features-title House features
+                                    ul.house__description__features-list
+                                        li.house__description__features-item
+                                            img(src="/images/house/couch-icon.png")
+                                            p Furnished
+                                        li.house__description__features-item
+                                            img(src="/images/house/elevator-icon.png")
+                                            p Elevator
+                                        li.house__description__features-item
+                                            img(src="/images/house/dish-icon.png")
+                                            p Dishes and Cullery
+                                        li.house__description__features-item
+                                            img(src="/images/house/oven-icon.png")
+                                            p Oven
+                                        li.house__description__features-item
+                                            img(src="/images/house/microwave-icon.png")
+                                            p Microwave
+                                        li.house__description__features-item
+                                            img(src="/images/house/balcony-icon.png")
+                                            p Balcony
+                                        li.house__description__features-item
+                                            img(src="/images/house/heating-icon.png")
+                                            p Central Heating System
+                                        li.house__description__features-item
+                                            img(src="/images/house/kitchen-icon.png")
+                                            p Equiped Kitchen
+                                        li.house__description__features-item
+                                            img(src="/images/house/shower-icon.png")
+                                            p 2 shared bathrooms
+                                        li.house__description__features-item
+                                            img(src="/images/house/toaster-icon.png")
+                                            p Toaster
+                                        li.house__description__features-item
+                                            img(src="/images/house/fridge-icon.png")
+                                            p 2 Comb Fridge + Frezzer
+                                        li.house__description__features-item
+                                            img(src="/images/house/key-icon.png")
+                                            p Lock in the Room
+                            .col-24.col-md-16
+                                .house__description__room-features.house__description__room-features--border
+                                    h3.house__description__features-title Included services
+                                    ul.house__description__room-features-list
+                                        li.house__description__room-features-item
+                                            img(src="/images/house/wifi-icon.png")
+                                            p Wifi
+                                        li.house__description__room-features-item
+                                            img(src="/images/house/ray-icon.png")
+                                            p Gas, water, electricity
+                                        li.house__description__room-features-item
+                                            img(src="/images/house/bottle-icon.png")
+                                            p Weekly cleaning of common areas
+                                        li.house__description__room-features-item
+                                            img(src="/images/house/tools-icon.png")
+                                            p Repair & Maintenace service
+                                        li.house__description__room-features-item
+                                            img(src="/images/house/mail-icon.png")
+                                            p Mailing service
+
+
+                            .col-24.col-md-16
+                                h2.house__description__title The rooms
+                                p.house__description__text We really support the idea that renting a prívate room in a shared house, is the perfect option to have a great private space while sharing your co-living experience with people from all over the world.
+                                p.house__description__text The 4 rooms are full equipped with a comfortable double bed, sheets, towels and bedcover; a closet where you will be able to organize all your stuff and a study area with chair and desk. Couples are also welcome. If you rent with a friend, you can ask our staff to provide you with 2 simple beds in a big room to share.
+                                .row
+                                    .col-24.col-md-12
+                                        .house__description__room-features
+                                            h3.house__description__features-title Room features
+                                            ul.house__description__room-features-list
+                                                li.house__description__room-features-item
+                                                    img(src="/images/house/key-icon.png")
+                                                    p Independent key
+                                            ul.house__description__room-features-list
+                                                li.house__description__room-features-item
+                                                    img(src="/images/house/desk-icon.png")
+                                                    p Desk & Chair
+                                            ul.house__description__room-features-list
+                                                li.house__description__room-features-item
+                                                    img(src="/images/house/heating-icon.png")
+                                                    p Central Heating System
+                                            ul.house__description__room-features-list
+                                                li.house__description__room-features-item
+                                                    img(src="/images/house/pillow-icon.png")
+                                                    p Pillows
+                                            ul.house__description__room-features-list
+                                                li.house__description__room-features-item
+                                                    img(src="/images/house/towel-icon.png")
+                                                    p Towels
+                                            ul.house__description__room-features-list
+                                                li.house__description__room-features-item
+                                                    img(src="/images/house/bed-icon.png")
+                                                    p Double bed
+                                            ul.house__description__room-features-list
+                                                li.house__description__room-features-item
+                                                    img(src="/images/house/mirror-icon.png")
+                                                    p Mirror
+                                            ul.house__description__room-features-list
+                                                li.house__description__room-features-item
+                                                    img(src="/images/house/closet-icon.png")
+                                                    p Closet
+                                            ul.house__description__room-features-list
+                                                li.house__description__room-features-item
+                                                    img(src="/images/house/sheets-icon.png")
+                                                    p Bed linens & Duvet
+
+        section.house__availability
+            .container
+                .row
+                    .col-24.col-md-22.offset-md-1
+                        h2.house__availability__title Bedrooms
+                        .house__availability__container
+                            span.house__availability__room.house__availability__room--available 1
+                            span.house__availability__room.house__availability__room--available 2
+                            span.house__availability__room.house__availability__room--booked 3
+                            span.house__availability__room.house__availability__room--booked 4
+                        .house__availability__legend
+                            .house__availability__room-status
+                                span.-turquoise
+                                p.house__availability__legend-text available
+                            .house__availability__room-status
+                                span.-red
+                                p.house__availability__legend-text booked
+
+
+        section.house__galery
+            .container
+                .row
+                    .col-24.col-md-22.offset-md-1
+                        h2.house__galery__title Gallery
+                        +slider('house__galery__slider', 'multi')
+                            .house__galery__slide
+                                a.house__galery__slide-image(href="/images/house/gallery-1.png")
+                                    img(src="/images/house/gallery-1.png")
+                            .house__galery__slide
+                                a.house__galery__slide-image(href="/images/house/gallery-2.png")
+                                    img(src="/images/house/gallery-2.png")
+                            .house__galery__slide
+                                a.house__galery__slide-image(href="/images/house/gallery-3.png")
+                                    img(src="/images/house/gallery-3.png")
+                            .house__galery__slide
+                                a.house__galery__slide-image(href="/images/house/gallery-4.png")
+                                    img(src="/images/house/gallery-4.png")
+                            .house__galery__slide
+                                a.house__galery__slide-image(href="/images/house/gallery-1.png")
+                                    img(src="/images/house/gallery-1.png")
+                            .house__galery__slide
+                                a.house__galery__slide-image(href="/images/house/gallery-2.png")
+                                    img(src="/images/house/gallery-2.png")
+                            .house__galery__slide
+                                a.house__galery__slide-image(href="/images/house/gallery-3.png")
+                                    img(src="/images/house/gallery-3.png")
+                            .house__galery__slide
+                                a.house__galery__slide-image(href="/images/house/gallery-4.png")
+                                    img(src="/images/house/gallery-4.png")
+
+        section.house__map
+            .container
+                .row
+                    .col-24.col-md-22.offset-md-1
+                        h2.house__map__title Location
+                        .house__map__container
+                            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3409947760006!2d-58.44584738477059!3d-34.59553788046152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca0a79cbb15b%3A0xf648054b323e310b!2sThames+500%2C+Buenos+Aires!5e0!3m2!1ses-419!2sar!4v1564014200319!5m2!1ses-419!2sar" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen)
