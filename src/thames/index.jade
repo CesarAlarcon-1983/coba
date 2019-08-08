@@ -73,9 +73,9 @@ block content
                                         li.house__description__features-item
                                             img(src="/images/house/couch-icon.png")
                                             p Furnished
-                                        li.house__description__features-item
-                                            img(src="/images/house/elevator-icon.png")
-                                            p Elevator
+                                        //- li.house__description__features-item
+                                        //-     img(src="/images/house/elevator-icon.png")
+                                        //-     p Elevator
                                         li.house__description__features-item
                                             img(src="/images/house/dish-icon.png")
                                             p Dishes and Cullery
@@ -85,9 +85,9 @@ block content
                                         li.house__description__features-item
                                             img(src="/images/house/microwave-icon.png")
                                             p Microwave
-                                        li.house__description__features-item
-                                            img(src="/images/house/balcony-icon.png")
-                                            p Balcony
+                                        //- li.house__description__features-item
+                                        //-     img(src="/images/house/balcony-icon.png")
+                                        //-     p Balcony
                                         li.house__description__features-item
                                             img(src="/images/house/heating-icon.png")
                                             p Central Heating System
@@ -96,7 +96,7 @@ block content
                                             p Equiped Kitchen
                                         li.house__description__features-item
                                             img(src="/images/house/shower-icon.png")
-                                            p 2 shared bathrooms
+                                            p 3 shared bathrooms
                                         li.house__description__features-item
                                             img(src="/images/house/toaster-icon.png")
                                             p Toaster
@@ -178,8 +178,9 @@ block content
                     .col-24.col-md-22.offset-md-1
                         h2.house__availability__title Bedrooms
                         .house__availability__container
+                            span.house__availability__room.house__availability__room--available 0
                             span.house__availability__room.house__availability__room--available 1
-                            span.house__availability__room.house__availability__room--available 2
+                            span.house__availability__room.house__availability__room--booked 2
                             span.house__availability__room.house__availability__room--booked 3
                             span.house__availability__room.house__availability__room--booked 4
                             span.house__availability__room.house__availability__room--booked 5
@@ -188,7 +189,6 @@ block content
                             span.house__availability__room.house__availability__room--booked 8
                             span.house__availability__room.house__availability__room--booked 9
                             span.house__availability__room.house__availability__room--booked 10
-                            span.house__availability__room.house__availability__room--booked 11
                         .house__availability__legend
                             .house__availability__room-status
                                 span.-turquoise
@@ -205,29 +205,35 @@ block content
                         h2.house__galery__title Gallery
                         +slider('house__galery__slider', 'multi')
                             .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/gallery-1.png")
-                                    img(src="/images/house/gallery-1.png")
+                                a.house__galery__slide-image(href="/images/house/thames1.jpg")
+                                    img(src="/images/house/thames1.jpg")
                             .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/gallery-2.png")
-                                    img(src="/images/house/gallery-2.png")
+                                a.house__galery__slide-image(href="/images/house/thames2.jpg")
+                                    img(src="/images/house/thames2.jpg")
                             .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/gallery-3.png")
-                                    img(src="/images/house/gallery-3.png")
+                                a.house__galery__slide-image(href="/images/house/thames3.jpg")
+                                    img(src="/images/house/thames3.jpg")
                             .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/gallery-4.png")
-                                    img(src="/images/house/gallery-4.png")
+                                a.house__galery__slide-image(href="/images/house/thames4.jpg")
+                                    img(src="/images/house/thames4.jpg")
                             .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/gallery-1.png")
-                                    img(src="/images/house/gallery-1.png")
+                                a.house__galery__slide-image(href="/images/house/thames5.jpg")
+                                    img(src="/images/house/thames5.jpg")
                             .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/gallery-2.png")
-                                    img(src="/images/house/gallery-2.png")
+                                a.house__galery__slide-image(href="/images/house/thames6.jpg")
+                                    img(src="/images/house/thames6.jpg")
                             .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/gallery-3.png")
-                                    img(src="/images/house/gallery-3.png")
+                                a.house__galery__slide-image(href="/images/house/thames7.jpg")
+                                    img(src="/images/house/thames7.jpg")
                             .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/gallery-4.png")
-                                    img(src="/images/house/gallery-4.png")
+                                a.house__galery__slide-image(href="/images/house/thames8.jpg")
+                                    img(src="/images/house/thames8.jpg")
+                            .house__galery__slide
+                                a.house__galery__slide-image(href="/images/house/thames9.jpg")
+                                    img(src="/images/house/thames9.jpg")
+                            .house__galery__slide
+                                a.house__galery__slide-image(href="/images/house/thames10.jpg")
+                                    img(src="/images/house/thames10.jpg")
 
         section.house__map
             .container

@@ -297,6 +297,10 @@
             &:after {
                 content: '';
                 width: 70px;
+
+                @include mq(md) {
+                    display: none;
+                }
             }
 
             @include mq(md) {
