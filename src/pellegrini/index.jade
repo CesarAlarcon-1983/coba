@@ -20,6 +20,7 @@ block content
                             .house__hero__container
                                 p.house__hero__text house
                                 h2.house__hero__title Pellegrini
+
             .house__hero__container-bottom
                 .container
                     .row
@@ -29,9 +30,11 @@ block content
                                     .house__hero__wrapper
                                         p.house__hero__location-text.house__hero__location-text--dark House Pellegrini - Pellegrini, 600
                                         p.house__hero__location-text Recoleta
+
                                 .col-24.col-md-8
                                     .house__hero__wrapper
                                         a.house__hero__button(href="/book-now") Book now
+
         section.house__description
             .container
                 .row
@@ -46,6 +49,7 @@ block content
                                 p.house__description__text You will find this apartment in the Recoleta neighborhood, located on the left side of the Teatro Colon, really centric. In this neighborhood you will find all different services around: bars, shops, restaurants, theaters, gyms, and more. Also, some of the best architectural modern buildings are located around this area.
                                 p.house__description__text Also, there are some campuses from different universities around, so there is always a lot of young people in the streets.
                                 p.house__description__text This apartment is the perfect option for students and young professionals who want to live in the city center of Buenos Aires and next to all services. Sharing your co-living experience with people from all around the world, and will make an unforgettable and useful life experience. In this apartment, you will always have a mate to do something together and for sure, you will always have the opportunity to relax in your incredible and private room.
+
                             .col-24.col-md-8
                                 .house__description__container
                                     .house__description__wrapper
@@ -68,6 +72,7 @@ block content
                                         p.house__description__wrapper-text
                                             span Shared Bathrooms
                                             |2
+
                             .col-24.col-md-16
                                 .house__description__features
                                     h3.house__description__features-title House features
@@ -108,6 +113,7 @@ block content
                                         li.house__description__features-item
                                             img(src="/images/house/key-icon.png")
                                             p Lock in the Room
+
                             .col-24.col-md-16
                                 .house__description__room-features.house__description__room-features--border
                                     h3.house__description__features-title Included services
@@ -127,7 +133,6 @@ block content
                                         li.house__description__room-features-item
                                             img(src="/images/house/mail-icon.png")
                                             p Mailing service
-
 
                             .col-24.col-md-16
                                 h2.house__description__title The rooms
@@ -192,37 +197,17 @@ block content
                                 span.-red
                                 p.house__availability__legend-text booked
 
-
         section.house__galery
             .container
                 .row
                     .col-24.col-md-22.offset-md-1
                         h2.house__galery__title Gallery
                         +slider('house__galery__slider', 'multi')
+                            - for(var i = 0; i < 18; i++) {
                             .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/gallery-1.png")
-                                    img(src="/images/house/gallery-1.png")
-                            .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/gallery-2.png")
-                                    img(src="/images/house/gallery-2.png")
-                            .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/gallery-3.png")
-                                    img(src="/images/house/gallery-3.png")
-                            .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/gallery-4.png")
-                                    img(src="/images/house/gallery-4.png")
-                            .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/gallery-1.png")
-                                    img(src="/images/house/gallery-1.png")
-                            .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/gallery-2.png")
-                                    img(src="/images/house/gallery-2.png")
-                            .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/gallery-3.png")
-                                    img(src="/images/house/gallery-3.png")
-                            .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/gallery-4.png")
-                                    img(src="/images/house/gallery-4.png")
+                                a.house__galery__slide-image(href="/images/house/pellegrini#{i + 1}.jpg")
+                                    img(src="/images/house/pellegrini#{i + 1}.jpg")
+                            - }
 
         section.house__map
             .container
