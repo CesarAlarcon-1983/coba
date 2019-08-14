@@ -320,6 +320,7 @@
             font-size: 24px;
             border-radius: 3px;
             margin-bottom: 20px;
+            cursor: pointer;
             
             @include mq(md) {
                 margin: 0 10px;
@@ -336,6 +337,7 @@
 
             &--booked {
                 background: $red;
+                pointer-events: none;
             }
         }
 
@@ -399,12 +401,13 @@
             width: 100%;
             height: 0;
             padding-bottom: 100%;
+            border-radius: 3px !important;
             
             img {
                 border-radius: 3px !important;
                 position: absolute;
                 max-height: 100%;
-                max-width: 100%;
+                // max-width: 100%;
                 top: 50%;
                 left: 50%;
                 transform: translate3d(-50%, -50%, 0);

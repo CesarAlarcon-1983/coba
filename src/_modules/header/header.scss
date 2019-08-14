@@ -188,6 +188,31 @@
             border-bottom: 1px solid $altGray;
         }
     }
+
+    &__facebook-button {
+        position: fixed;
+        bottom: 0;
+        background: $blue;
+        z-index: 10000;
+        border: none;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        color: $white;
+        padding: 0 20px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        right: 8%;
+        cursor: pointer;
+        text-decoration: none;
+
+        i {
+            margin-right: 10px;
+        }
+        p {
+            margin: 0;
+        }
+    }
     
     &__hamburguer {
         cursor: pointer;
