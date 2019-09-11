@@ -153,30 +153,11 @@ block content
                     .col-24.col-md-22.offset-md-1
                         h2.house__galery__title Gallery
                         +slider('house__galery__slider', 'multi')
+                            - for(var i = 0; i < 21; i++) {
                             .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/gallery-1.png")
-                                    img(src="/images/house/gallery-1.png")
-                            .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/gallery-2.png")
-                                    img(src="/images/house/gallery-2.png")
-                            .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/gallery-3.png")
-                                    img(src="/images/house/gallery-3.png")
-                            .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/gallery-4.png")
-                                    img(src="/images/house/gallery-4.png")
-                            .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/gallery-1.png")
-                                    img(src="/images/house/gallery-1.png")
-                            .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/gallery-2.png")
-                                    img(src="/images/house/gallery-2.png")
-                            .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/gallery-3.png")
-                                    img(src="/images/house/gallery-3.png")
-                            .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/gallery-4.png")
-                                    img(src="/images/house/gallery-4.png")
+                                a.house__galery__slide-image(href="/images/house/laprida#{i + 1}.jpg")
+                                    img(src="/images/house/laprida#{i + 1}.jpg")
+                            - }
 
         section.house__map
             .container

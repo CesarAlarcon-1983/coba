@@ -82,6 +82,12 @@
 
         }
 
+        &__text {
+            color: $lightBlack;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
         &__title {
             font-weight: 300;
             font-size: 18px;

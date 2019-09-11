@@ -24,17 +24,17 @@ block content
                                 .book-now__wrapper
                                     .book-now__icon
                                         img(src="/images/book-now/paypal-icon.png")
-                                    p.book-now__wrapper-text PayPal Payment
+                                    a(href="https://paypal.com", target="_blank").book-now__wrapper-text PayPal Payment
 
                                 .book-now__wrapper
                                     .book-now__icon
                                         img(src="/images/book-now/document-icon.png")
-                                    p.book-now__wrapper-text COBA politics
+                                    a(href="#" data-modal="open" data-target="politics").book-now__wrapper-text COBA politics
 
                                 .book-now__wrapper
                                     .book-now__icon
                                         img(src="/images/book-now/document-icon.png")
-                                    p.book-now__wrapper-text Cancellation policy
+                                    a(href="#" data-modal="open" data-target="cancellation").book-now__wrapper-text Cancellation policy
                         .col-24.col-md-14
                             form.book-now__form
                                 h3.book-now__form__title Reservation form
@@ -55,3 +55,30 @@ block content
                                         textarea.book-now__form__input.book-now__form__input--textarea(type="textarea" placeholder="Mensaje")
                                     .col-24.col-md-12
                                         button.book-now__form__button(type="submit") Pay your reservation
+
+
+    .coba-modal
+        .coba-modal__backdrop(data-modal="close")
+        .coba-modal__container
+            button.coba-modal__close(data-modal="close")
+                span
+                span
+                
+            .book-now__legal(data-content="politics")
+                h3 Do I have to pay any guarantee deposit?
+                p The total guarantee deposit cots 500 USD. For booking you must pay half of the total guarantee deposit: 250 USD (the payment must be done through PayPal).
+                p Once you pay the 250 USD, your reservation will be confirmed immediately. The rest of the guarantee deposit (250 USD) should be paid the moment after you check- in.
+                p The guarantee deposit will be returned once your stay at the residence is over. (as long as you have followed the rules and returned things from the room and common areas in proper conditions).
+                p The guarantee deposit will be returned through the same method of payment used at first.
+                p If you don&#39;t show up on the agreed date of your arrival, and if we don’t receive notification by email within 48 hours prior to the arrival date established, the company reserves the right to cancel your reservation (with no reimbursement).
+                p The transfer costs are responsibility of the customer
+                p Pets are not allowed.
+                p Smoking is not allowed.
+
+            .book-now__legal(data-content="cancellation")
+                h3 Booking cancellation policy
+                p If you cancel a reservation, the following penalties will be applied:
+                p 1. Canceling a reservation up to one month before the arrival date will have a penalty of 100 USD.
+                p 2. Canceling a reservation during the 30 days prior to your arrival date will be penalized with the total payment of the reservation (250 USD).
+
+                
