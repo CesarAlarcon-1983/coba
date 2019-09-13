@@ -183,19 +183,19 @@ block content
             .container
                 .row
                     .col-24.col-md-22.offset-md-1
-                        h2.house__availability__title Bedrooms
-                        .house__availability__container
-                            span.house__availability__room.house__availability__room--available 1
-                            span.house__availability__room.house__availability__room--available 2
-                            span.house__availability__room.house__availability__room--booked 3
-                            span.house__availability__room.house__availability__room--booked 4
-                        .house__availability__legend
-                            .house__availability__room-status
-                                span.-turquoise
-                                p.house__availability__legend-text available
-                            .house__availability__room-status
-                                span.-red
-                                p.house__availability__legend-text booked
+                        h2.house__availability__title Bedrooms Photos
+                        .house__availability__container(data-houseName="pellegrini")
+                            span.house__availability__room(data-room="room1") 1
+                            span.house__availability__room(data-room="room2") 2
+                            span.house__availability__room(data-room="room3") 3
+                            span.house__availability__room(data-room="room4") 4
+                        //- .house__availability__legend
+                        //-     .house__availability__room-status
+                        //-         span.-turquoise
+                        //-         p.house__availability__legend-text available
+                        //-     .house__availability__room-status
+                        //-         span.-red
+                        //-         p.house__availability__legend-text booked
 
         section.house__galery
             .container
@@ -215,4 +215,4 @@ block content
                     .col-24.col-md-22.offset-md-1
                         h2.house__map__title Location
                         .house__map__container
-                            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3409947760006!2d-58.44584738477059!3d-34.59553788046152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca0a79cbb15b%3A0xf648054b323e310b!2sThames+500%2C+Buenos+Aires!5e0!3m2!1ses-419!2sar!4v1564014200319!5m2!1ses-419!2sar" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen)
+                            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1077055241826!2d-58.38333578445716!3d-34.60143788046003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac8c48e0bbd%3A0x51ae58108a173072!2sCarlos%20Pellegrini%20600%2C%20C1189%20CABA!5e0!3m2!1ses-419!2sar!4v1568296776969!5m2!1ses-419!2sar" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen)

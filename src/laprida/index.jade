@@ -132,19 +132,19 @@ block content
             .container
                 .row
                     .col-24.col-md-22.offset-md-1
-                        h2.house__availability__title Bedrooms
-                        .house__availability__container
-                            span.house__availability__room.house__availability__room--available 1
-                            span.house__availability__room.house__availability__room--available 2
-                            span.house__availability__room.house__availability__room--booked 3
-                            span.house__availability__room.house__availability__room--booked 4
+                        h2.house__availability__title Bedrooms Photos
+                        .house__availability__container(data-houseName="laprida")
+                            span.house__availability__room(data-room="room1") 1
+                            span.house__availability__room.house__availability__room--red(data-room="room2") 2
+                            //- span.house__availability__room(data-room="room3") 3
+                            //- span.house__availability__room(data-room="room4") 4
                         .house__availability__legend
                             .house__availability__room-status
                                 span.-turquoise
-                                p.house__availability__legend-text available
+                                p.house__availability__legend-text Single Bed
                             .house__availability__room-status
                                 span.-red
-                                p.house__availability__legend-text booked
+                                p.house__availability__legend-text Double Bed
 
 
         section.house__galery
@@ -153,7 +153,7 @@ block content
                     .col-24.col-md-22.offset-md-1
                         h2.house__galery__title Gallery
                         +slider('house__galery__slider', 'multi')
-                            - for(var i = 0; i < 21; i++) {
+                            - for(var i = 0; i < 9; i++) {
                             .house__galery__slide
                                 a.house__galery__slide-image(href="/images/house/laprida#{i + 1}.jpg")
                                     img(src="/images/house/laprida#{i + 1}.jpg")

@@ -16,7 +16,7 @@ $lightBlack: #484848;
 
 $mainColor: $red;
 $link: $mainColor;
-$linkHover: $white;
+$linkHover: $mainColor - #333;
 $text: $white;
 $textDark: $black;
 $accent: $mainColor;

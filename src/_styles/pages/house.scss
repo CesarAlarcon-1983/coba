@@ -321,23 +321,19 @@
             border-radius: 3px;
             margin-bottom: 20px;
             cursor: pointer;
+            background: $turquoise;
             
             @include mq(md) {
                 margin: 0 10px;
             }
 
-            &--available {
-                background: $turquoise;
-
-                &:hover,
-                &:focus {
-                    background: transparentize($turquoise, .7)
-                }
+            &:hover,
+            &:focus {
+                background: transparentize($turquoise, .7)
             }
 
-            &--booked {
+            &--red {
                 background: $red;
-                pointer-events: none;
             }
         }
 

@@ -189,19 +189,19 @@ block content
             .container
                 .row
                     .col-24.col-md-22.offset-md-1
-                        h2.house__availability__title Bedrooms
-                        .house__availability__container
-                            span.house__availability__room.house__availability__room--available 1
-                            span.house__availability__room.house__availability__room--available 2
-                            span.house__availability__room.house__availability__room--booked 3
-                            span.house__availability__room.house__availability__room--booked 4
-                        .house__availability__legend
-                            .house__availability__room-status
-                                span.-turquoise
-                                p.house__availability__legend-text available
-                            .house__availability__room-status
-                                span.-red
-                                p.house__availability__legend-text booked
+                        h2.house__availability__title Bedrooms Photos
+                        .house__availability__container(data-houseName="anexo")
+                            span.house__availability__room(data-room="room1") 1
+                            span.house__availability__room(data-room="room2") 2
+                            span.house__availability__room(data-room="room3") 3
+                            span.house__availability__room(data-room="room4") 4
+                        //- .house__availability__legend
+                        //-     .house__availability__room-status
+                        //-         span.-turquoise
+                        //-         p.house__availability__legend-text available
+                        //-     .house__availability__room-status
+                        //-         span.-red
+                        //-         p.house__availability__legend-text booked
 
 
         section.house__galery
@@ -210,27 +210,27 @@ block content
                     .col-24.col-md-22.offset-md-1
                         h2.house__galery__title Gallery
                         +slider('house__galery__slider', 'multi')
-                            .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/anexo1.jpg")
-                                    img(src="/images/house/anexo1.jpg")
+                            //- .house__galery__slide
+                            //-     a.house__galery__slide-image(href="/images/house/anexo1.jpg")
+                            //-         img(src="/images/house/anexo1.jpg")
                             .house__galery__slide
                                 a.house__galery__slide-image(href="/images/house/anexo2.jpg")
                                     img(src="/images/house/anexo2.jpg")
-                            .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/anexo3.jpg")
-                                    img(src="/images/house/anexo3.jpg")
+                            //- .house__galery__slide
+                            //-     a.house__galery__slide-image(href="/images/house/anexo3.jpg")
+                            //-         img(src="/images/house/anexo3.jpg")
                             .house__galery__slide
                                 a.house__galery__slide-image(href="/images/house/anexo4.jpg")
                                     img(src="/images/house/anexo4.jpg")
-                            .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/anexo5.jpg")
-                                    img(src="/images/house/anexo5.jpg")
+                            //- .house__galery__slide
+                            //-     a.house__galery__slide-image(href="/images/house/anexo5.jpg")
+                            //-         img(src="/images/house/anexo5.jpg")
                             .house__galery__slide
                                 a.house__galery__slide-image(href="/images/house/anexo6.jpg")
                                     img(src="/images/house/anexo6.jpg")
-                            .house__galery__slide
-                                a.house__galery__slide-image(href="/images/house/anexo7.jpg")
-                                    img(src="/images/house/anexo7.jpg")
+                            //- .house__galery__slide
+                            //-     a.house__galery__slide-image(href="/images/house/anexo7.jpg")
+                            //-         img(src="/images/house/anexo7.jpg")
                             .house__galery__slide
                                 a.house__galery__slide-image(href="/images/house/anexo8.jpg")
                                     img(src="/images/house/anexo8.jpg")
